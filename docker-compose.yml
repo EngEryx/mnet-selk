@@ -15,7 +15,7 @@ kibana:
 
 logstash:
   image: logstash:1.5.3
-  command: logstash -f /etc/logstash/conf.d
+  command: logstash -f /etc/logstash/conf.d/logstash.conf
   volumes:
     - ./logstash:/etc/logstash:ro
   links:
