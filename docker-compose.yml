@@ -26,7 +26,7 @@ logstash:
 proxy:
   image: sameersbn/squid:latest
   volumes:
-    - ./proxy/squid.user.conf:/etc/squid3/squid.user.conf:ro
+    - ./proxy/squid.user.conf:/etc/squid/squid.conf:ro
     - ./data/proxy/squid/cache:/var/spool/squid3:rw
   links:
     - logstash
