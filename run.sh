@@ -1,5 +1,5 @@
 #!/bin/bash
-docker-compose up -d search
+docker-compose up -d elasticsearch
 
 sleep 5
 
