@@ -1,0 +1,62 @@
+{
+    "settings": {
+        "number_of_replicas": "1",
+        "number_of_shards": "1"
+    },
+    "mappings": {
+        "_default_": {
+            "_timestamp": {
+                "enabled": true,
+                "path": "time",
+                "format": "date_time_no_millis"
+            },
+            "properties": {
+                "time": {
+                    "type": "date",
+                    "format": "date_time_no_millis"
+                },
+                "host": {
+                    "type": "string",
+                    "index": "not_analyzed"
+                },
+                "src_ip": {
+                    "type": "string",
+                    "index": "not_analyzed"
+                },
+                "reply_size_include_header": {
+                    "type": "integer",
+                    "index": "not_analyzed"
+                },
+                "squid_request_status": {
+                    "type": "string",
+                    "index": "not_analyzed"
+                },
+                "http_status_code": {
+                    "type": "integer",
+                    "index": "not_analyzed"
+                },
+                "http_method": {
+                    "type": "string",
+                    "index": "not_analyzed"
+                },
+                "request_url": {
+                    "type": "string",
+                    "index": "not_analyzed"
+                },
+                "content_type": {
+                    "type": "string",
+                    "index": "not_analyzed"
+                },
+                "squid": {
+                    "type": "string",
+                    "index": "not_analyzed"
+                },
+                "server_ip": {
+                    "type": "string",
+                    "index": "not_analyzed"
+                }
+            }
+        }
+    }
+}
+
